@@ -14,7 +14,7 @@ if __name__ == '__main__':
     #
     # ATTENTION: A __init__.py is necessary in each directory and sub-directory in the search tree for all
     # test files to be discovered.
-    suite = unittest.TestLoader().discover('.', pattern='test*.py')
+    suite = unittest.TestLoader().discover(start_dir=os.getcwd(), pattern='test*.py')
     # unittest.TextTestRunner(verbosity=2).run(suite)
 
     # Run the tests, and generate the JUnit-compatible XML tests report that Jenkins can consume.

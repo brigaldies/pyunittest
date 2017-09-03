@@ -1,6 +1,6 @@
 import unittest
 
-from main.py.com.o19s.app import App
+from src.main.py.com.o19s.app import *
 
 
 class TestCase1(unittest.TestCase):
